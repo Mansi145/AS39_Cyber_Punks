@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Laravel</title>
+  <title>{{ config('app.name') }}</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -14,53 +14,39 @@
   <link href="{{ url('css/mdb.min.css')}}" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="{{ url('css/style.min.css')}}" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    .carousel {
-      height: 60vh;
-    }
 
-    @media (max-width: 740px) {
+  <script>
+   if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(reg){
+       }).catch(function(err) {
+      });
+   }
+  </script>
 
-      html,
-      body,
-      .carousel {
-        height: 100vh;
-      }
-    }
+  <link rel="manifest" href="/manifest.json">
 
-    @media (min-width: 800px) and (max-width: 850px) {
+  <link rel="icon" href="/img/icon_32.png" type="image/png">
 
-      html,
-      body,
-      .carousel {
-        height: 100vh;
-      }
-    }
+  <link rel="apple-touch-icon" href="/img/icon_32.png">
 
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #929FBA !important;
-      }
-    }
+  <meta name="theme-color" content="#F7F8F9"/>
 
-  </style>
 </head>
 
 <body>
 
   <header>
 
-    <nav style="background-color: #929FBA;" class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+    <nav class="navbar navbar-expand-lg elegant-color-dark navbar-dark scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="https://assets-bg.gem.gov.in/resources/images/gem-new-logo-v3.svg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-
+        <a class="navbar-brand" href="#"><img src="https://assets-bg.gem.gov.in/resources/images/gem-new-logo-v6.svg"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/login">Login
@@ -94,55 +80,18 @@
       <!--Slides-->
       <div class="carousel-inner" role="listbox">
 
-        <!--First slide-->
         <div class="carousel-item active">
-          <div class="view" style="background-image: url('img/home1.png'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
+          <img class="d-block w-100" src="img/home1.png">
         </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
         <div class="carousel-item">
-          <div class="view" style="background-image: url('img/home2.png'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-             
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
+          <img class="d-block w-100" src="img/home2.png">
         </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
         <div class="carousel-item">
-          <div class="view" style="background-image: url('img/home3.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
+          <img class="d-block w-100" src="img/home3.jpg">
         </div>
-        <!--/Third slide-->
 
       </div>
       <!--/.Slides-->
-
       <!--Controls-->
       <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

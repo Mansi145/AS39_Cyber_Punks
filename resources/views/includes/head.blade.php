@@ -15,4 +15,23 @@
 <link href="{{ url('css/mdb.css') }}" rel="stylesheet">
 <link href="{{ url('css/style.css') }}" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+
+
+
+<script>
+ if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(reg){
+     }).catch(function(err) {
+    });
+ }
+</script>
+<link rel="manifest" href="/manifest.json">
+
+<link rel="icon" href="/img/icon_32.png" type="image/png">
+
+<link rel="apple-touch-icon" href="/img/icon_32.png">
+
+<meta name="theme-color" content="#F7F8F9"/>
+
 @yield('css')

@@ -5,7 +5,7 @@
     		background-color: #eeeeee;
     	}
     </style>
-<body class="fixed-sn deep-purple-skin">
+<body class="fixed-sn mdb-skin">
     @include('includes.header')
     <main>
     	@include('includes.msg')

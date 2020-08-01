@@ -35,22 +35,6 @@
       background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(11).jpg")no-repeat center center;
       background-size: cover;
     }
-    .top-nav-collapse {
-      background-color: #3f51b5 !important;
-    }
-    .navbar:not(.top-nav-collapse) {
-      background: transparent !important;
-    }
-    @media (max-width: 768px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
-      }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-        background: #3f51b5!important;
-      }
-    }
 
     .card {
       background-color: rgba(229, 228, 255, 0.2);
@@ -86,6 +70,23 @@
 
   </style>
 
+  <script>
+   if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(reg){
+       }).catch(function(err) {
+      });
+   }
+  </script>
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="icon" href="/img/icon_32.png" type="image/png">
+
+  <link rel="apple-touch-icon" href="/img/icon_32.png">
+
+  <meta name="theme-color" content="#F7F8F9"/>
+
 </head>
 
 <body>
@@ -94,9 +95,9 @@
   <!--Main Navigation-->
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="https://assets-bg.gem.gov.in/resources/images/gem-new-logo-v3.svg"></a>
+        <a class="navbar-brand" href="/"><img src="https://assets-bg.gem.gov.in/resources/images/gem-new-logo-v6.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -116,7 +117,7 @@
               <div class="card-body">
 
                 <!--Header-->
-                <div class="form-header purple-gradient">
+                <div class="form-header blue-gradient">
                   <h3><i class="fas fa-user mt-2 mb-2"></i> Log in</h3>
                 </div>
 
@@ -145,7 +146,7 @@
                     @enderror
                   </div>
                   <div class="text-center"> 
-                    <button class="btn purple-gradient btn-lg">Log In</button>   
+                    <button class="btn blue-gradient btn-lg">Log In</button>   
                   </div>
                 </form>
 
