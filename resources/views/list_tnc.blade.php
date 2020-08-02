@@ -12,6 +12,8 @@
                  <th>Id</th>
                  <th>Title</th>
                  <th>Created</th>
+                 <th>Last Edit</th>
+                 <th>Owner</th>
                  <th>Action</th>
              </tr>
          </thead>
@@ -31,6 +33,8 @@
        { data: 'id', name: 'id' },
        { data: 'title', name: 'title' },
        { data: 'created_at', name: 'created_at' },
+       { data: 'last_edit', name: 'last_edit' },
+       { data: 'owner', name: 'owner' },
        { data: 'action', name: 'action' }
        ]
    });

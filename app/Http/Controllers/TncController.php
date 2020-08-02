@@ -88,19 +88,30 @@ class TncController extends Controller
         }
         return Datatables::of($tnc)
             ->editColumn('title', function (Tnc $t) {
-                return '<a href="'.url('tnc/'.$t->id).'" target="_blank"><u>'.$t->title.'</u><a>';
+                return '<a href="'.url('tnc/'.$t->id).'"><u>'.$t->title.'</u><a>';
             })
             ->editColumn('created_at', function (Tnc $t) {
                 return $t->created_at->diffForHumans();
             })
             ->addColumn('action', function (Tnc $t) {
-                return '<a href="'.route('tncs.edit', $t->id).'" target="_blank" class="d-inline btn btn-primary">
-            	<i class="fas fa-pencil-alt mr-1"></i> Edit Title</a> &nbsp;
-            	<form action="'.route('tncs.destroy', $t->id).'" method="POST" class="d-inline-block">
-                	'.csrf_field().'
-                	<input type="hidden" name="_method" value="DELETE">
-                	<button class="btn btn-danger"><i class="fas fa-trash-alt mr-1"></i> Delete</button>
-            	</form>';
+                if ($t->user_id == Auth::id()) {
+                    return '<a href="'.route('tncs.edit', $t->id).'" target="_blank" class="d-inline btn btn-primary">
+                    <i class="fas fa-pencil-alt mr-1"></i> Edit Title</a> &nbsp;
+                    <form action="'.route('tncs.destroy', $t->id).'" method="POST" class="d-inline-block">
+                        '.csrf_field().'
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button class="btn btn-danger"><i class="fas fa-trash-alt mr-1"></i> Delete</button>
+                    </form>';
+                }
+            })
+            ->addColumn('owner', function (Tnc $t) {
+                return User::where('id', $t->user_id)->first()->name;
+            })
+            ->addColumn('last_edit', function (Tnc $t) {
+                $etherpad = new \EtherpadLite\Client(config('etherpad.api_key'), config('etherpad.url'));
+                $ts = $etherpad->getLastEdited($t->pad_id)->getData('lastEdited');
+                $utc = date("Y-m-d H:i", $ts/1000);
+                return date("d-m-Y H:i", strtotime($utc.' + 330 minute'));
             })
             ->rawColumns([
                 'title',

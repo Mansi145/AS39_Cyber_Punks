@@ -44,30 +44,22 @@
             <div class="data">
               <p class="mb-2"> Terms and Conditions</p>
               <p class="mb-2"> Total Count:<?php echo "$contt" ?></p>
-              <div style="margin-left: -350px;">
+            </div>
+            <div>
               <table class="table mr-4">
                 <thead>
                   <tr>
                     <th scope=""><i>Title</i></th>
-
-
                   </tr>
                 </thead>
                 <tbody>
                   @foreach($terms as $term)
-                  
                   <tr>
-                    
-
-                    
                     <td><a href="tnc/{{$term->id}}">{{ $term->title }}</a></td>
-                    <br>
-                    @endforeach
                   </tr>
-                  </tr>
+                  @endforeach
                 </tbody>
               </table>
-            </div>
             </div>
           </div>
           <!--/.Card Data-->
@@ -92,30 +84,22 @@
             <div class="data">
               <p class="mb-2"> Recent Users</p>
               <p class="mb-2"> Total Count:<?php echo "$cont" ?></p>
-              <div style="margin-left: -400px;">
+            </div>  
+            <div>
               <table class="table mr-4">
                 <thead>
                   <tr>
                     <th scope=""><i>Users List</i></th>
-
-
                   </tr>
                 </thead>
                 <tbody>
                   @foreach($users as $man)
-                  
                   <tr>
-                    
-
-                    
                     <td>{{ $man->name }}</td>
-                    <br>
-                    @endforeach
                   </tr>
-                  </tr>
+                  @endforeach
                 </tbody>
               </table>
-            </div>
             </div>
           </div>
           <!--/.Card Data-->
