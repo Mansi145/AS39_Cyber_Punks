@@ -60,11 +60,6 @@
                 <label for="orangeForm-pass-confirm">Confirm Password</label>
             </div>
 
-            <div class="md-form">
-                <input type="checkbox" class="form-check-input" id="materialUnchecked" name="super_admin">
-                <label class="form-check-label" for="materialUnchecked">Super Admin</label>
-            </div>
-
             <div class="text-center">
                 <button class="btn btn-indigo btn-rounded mt-5">Update User</button>
             </div>

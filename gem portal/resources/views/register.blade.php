@@ -1,4 +1,11 @@
 @extends('layouts.dashboard')
+@section('script')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+    });
+</script>
+@endsection
 @section('content')
 <div class="card">
     <div class="card-body">
