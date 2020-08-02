@@ -7,7 +7,7 @@ Cyber_Punks
 
 ### Problem Statement: 
 
-![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front2.png)
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front4.png)
 
 GeM portal is a dedicated E-market for different goods & services procured by Government Organisations / Departments / PSUs. It facilitates online procurement of common use Goods & Services required by various Government Departments / Organisations / PSUs. 
 
@@ -21,7 +21,10 @@ Ministry of Women and Child Development
 ### Problem Code:
 AS39
 
-### Check Presentation:
+### Solution
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front2.png)
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front3.png)
+
 [Idea Presentation](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/Idea_presentation.pptx
 
 ## Cost
@@ -68,4 +71,3 @@ It contains the code for the editor that is used for real time editing.
 ### Node Editor - 
 [Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/node_editor/ReadMe.md)
 
-![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front3.png)
