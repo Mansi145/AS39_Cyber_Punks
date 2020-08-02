@@ -28,8 +28,10 @@ It contains the code for the editor.
 - mysql
 
 ## Installation Instructions 
-### Gem Portal - Readme.md 
-### Node Editor - Readme.md
+### Gem Portal - 
+![Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/gem%20portal/README.md)
+### Node Editor - 
+![Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/node_editor/ReadMe.md)
 
 ## Cost
 
