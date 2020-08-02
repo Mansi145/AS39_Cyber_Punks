@@ -39,10 +39,12 @@ Note: Either use cloud pricing or existent local server pricing
 | 3 | Cloud | Data Tranfser | Rs. 1400 | Yes | No | 1 |
 | 4 | Cloud | T3.micro | Rs. 200 | Yes | No | 3 |
 | 5 | Cloud | Elastic Load Balancer | Rs. 1000 | Yes | No | 1 |
+| 6 | Cloud | Twilio TURN SERVER | Rs. 6000 | Yes | No | 1 |
+| 7 | Cloud | STUN | FREE | Yes | No | 1 |
 
 - Active Users: 100000 Maximum
 - Pods: 7-8
-- Total: Rs. 4200 Per Month
+- Total: Rs. 10200 Per Month
  
 
 ### Already Existent Servers
