@@ -1,0 +1,170 @@
+
+{
+  
+  "title": "GEM",
+
+  "favicon": "favicon.ico",
+
+  "skinName": "colibris",
+
+  "skinVariants": "super-light-toolbar super-light-editor light-background",
+
+  "ip": "0.0.0.0",
+  "port": 9008,
+
+  "showSettingsInAdminPage": true,
+
+  "ssl" : {
+            "key"  : "./private.key",
+            "cert" : "./certificate.crt",
+            "ca": ["./ca_bundle.crt"],
+          },
+
+  "dbType" : "mysql",
+  "dbSettings" : {
+    "user":     "sih_root",
+    "host":     "localhost",
+    "port":     3306,
+    "password": "ThisIsMyPass",
+    "database": "ep",
+    "charset":  "utf8mb4"
+  },
+
+
+  "defaultPadText" : "",
+
+  "padOptions": {
+    "noColors":         false,
+    "showControls":     true,
+    "showChat":         true,
+    "showLineNumbers":  true,
+    "useMonospaceFont": false,
+    "userName":         false,
+    "userColor":        false,
+    "rtl":              false,
+    "alwaysShowChat":   false,
+    "chatAndUsers":     false,
+    "lang":             "en-gb"
+  },
+
+  /*
+   * Pad Shortcut Keys
+   */
+  "padShortcutEnabled" : {
+    "altF9":     true, /* focus on the File Menu and/or editbar */
+    "altC":      true, /* focus on the Chat window */
+    "cmdShift2": true, /* shows a gritter popup showing a line author */
+    "delete":    true,
+    "return":    true,
+    "esc":       true, /* in mozilla versions 14-19 avoid reconnecting pad */
+    "cmdS":      true, /* save a revision */
+    "tab":       true, /* indent */
+    "cmdZ":      true, /* undo/redo */
+    "cmdY":      true, /* redo */
+    "cmdI":      true, /* italic */
+    "cmdB":      true, /* bold */
+    "cmdU":      true, /* underline */
+    "cmd5":      true, /* strike through */
+    "cmdShiftL": true, /* unordered list */
+    "cmdShiftN": true, /* ordered list */
+    "cmdShift1": true, /* ordered list */
+    "cmdShiftC": true, /* clear authorship */
+    "cmdH":      true, /* backspace */
+    "ctrlHome":  true, /* scroll to top of pad */
+    "pageUp":    true,
+    "pageDown":  true
+  },
+
+  
+  "suppressErrorsInPadText": false,
+
+  "requireSession": false,
+
+  "editOnly": false,
+
+  "sessionNoPassword": false,
+
+ 
+  "minify": true,
+
+ 
+  "maxAge": 21600, // 60 * 60 * 6 = 6 hours
+
+
+  "abiword": null,
+
+  "soffice": null,
+
+ 
+  "tidyHtml": null,
+
+  "allowUnknownFileEnds": true,
+
+  "requireAuthentication": false,
+
+  "requireAuthorization": false,
+
+  "trustProxy": true,
+
+  "disableIPlogging": false,
+
+  "automaticReconnectionTimeout": 0,
+
+  "scrollWhenFocusLineIsOutOfViewport": {
+
+    "percentage": {
+      "editionAboveViewport": 0,
+      "editionBelowViewport": 0
+    },
+
+    "duration": 0,
+    "scrollWhenCaretIsInTheLastLineOfViewport": false,
+
+    "percentageToScrollWhenUserPressesArrowUp": 0
+  },
+
+  "users": {
+    "admin": {
+      // 1) "password" can be replaced with "hash" if you install ep_hash_auth
+      // 2) please note that if password is null, the user will not be created
+      "password": "changeme1",
+      "is_admin": true
+    },
+    "user": {
+      // 1) "password" can be replaced with "hash" if you install ep_hash_auth
+      // 2) please note that if password is null, the user will not be created
+      "password": "changeme1",
+      "is_admin": false
+    }
+  },
+
+  "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
+
+  "loadTest": false,
+
+
+  "importExportRateLimiting": {
+    // duration of the rate limit window (milliseconds)
+    "windowMs": 90000,
+
+    // maximum number of requests per IP to allow during the rate limit window
+    "max": 10
+  },
+
+  "importMaxFileSize": 52428800, // 50 * 1024 * 1024
+
+
+  "exposeVersion": false,
+
+  "loglevel": "INFO",
+
+  "logconfig" :
+    { "appenders": [
+        { "type": "console"
+        //, "category": "access"// only logs pad access
+        }
+
+
+      ]
+    } // logconfig
+}
