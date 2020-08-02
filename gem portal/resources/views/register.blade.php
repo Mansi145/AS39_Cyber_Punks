@@ -47,6 +47,13 @@
                 @enderror
                 <label for="orangeForm-pass-confirm">Confirm Password</label>
             </div>
+            
+            <select class="mdb-select colorful-select dropdown-dark" name="user_type">
+                <option value="" selected>Select User Type</option>
+                <option value="buyer">Buyer</option>
+                <option value="seller">Seller</option>
+            </select>
+            <label class="mdb-main-label">User Type</label>
 
             <div class="md-form">
                 <input type="checkbox" class="form-check-input" id="materialUnchecked" name="super_admin">
