@@ -1,13 +1,13 @@
 /node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-.env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+gem portal/public/hot
+gem portal/public/storage
+gem portal/storage/*.key
+gem portal/vendor
+gem portal/.env
+gem portal/.env.backup
+gem portal/.phpunit.result.cache
+gem portal/Homestead.json
+gem portal/Homestead.yaml
 npm-debug.log
 yarn-error.log
 video_chat_module/node_modules
