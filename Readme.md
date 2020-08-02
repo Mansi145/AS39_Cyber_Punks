@@ -25,7 +25,7 @@ AS39
 ![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front2.png)
 ![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front3.png)
 
-[Idea Presentation](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/Idea_presentation.pptx
+[Idea Presentation](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/Idea_presentation.pptx)
 
 ## Cost
 
