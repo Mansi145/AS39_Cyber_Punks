@@ -15,6 +15,9 @@
             <li><a href="{{ url('home') }}" class="waves-effect"><i class="fas fa-home"></i> Home</a></li>
             @if(Auth::user()->is_admin == 1)<li><a href="{{ url('users') }}" class="waves-effect"><i class="fas fa-users"></i> User</a></li>@endif
             <li><a href="{{ url('tncs') }}" class="waves-effect"><i class="fas fa-users"></i> T&Cs</a></li>
+            <li><a href="{{ url('bids') }}" class="waves-effect"><i class="fas fa-users"></i> Bids</a></li>
+            <li><a href="{{ url('contact-us') }}" class="waves-effect" target="_blank"><i class="fas fa-users"></i> Contact Us</a></li>
+            <li><a href="{{ url('faq') }}" class="waves-effect" target="_blank"><i class="fas fa-users"></i> FAQs</a></li>
 {{--             <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-eye"></i> About<i class="fas fa-angle-down rotate-icon"></i></a>
               <div class="collapsible-body">
                 <ul>
