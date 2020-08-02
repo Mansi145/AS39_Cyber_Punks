@@ -3,7 +3,12 @@
 ### Team Name:
 Cyber_Punks
 
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front1.png)
+
 ### Problem Statement: 
+
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front2.png)
+
 GeM portal is a dedicated E-market for different goods & services procured by Government Organisations / Departments / PSUs. It facilitates online procurement of common use Goods & Services required by various Government Departments / Organisations / PSUs. 
 
 In GeM Portal, we are looking for provision of customization of terms and conditions for Annual Maintenance Contract of services as per the need of the services required by the organisation may be created. It could be module which would 
@@ -15,6 +20,9 @@ Ministry of Women and Child Development
 
 ### Problem Code:
 AS39
+
+### Check Presentation:
+[Idea Presentation](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/Idea_presentation.pptx
 
 ## Cost
 
@@ -48,13 +56,16 @@ It contains the frontend and backend of the Collabora.AI.
 - php
 - laravel
 - mysql
+
 ### node_editor
-It contains the code for the editor.
+It contains the code for the editor that is used for real time editing.
 - nodejs
 - mysql
 
 ## Installation Instructions 
 ### Gem Portal - 
-![Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/gem%20portal/README.md)
+[Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/gem%20portal/README.md)
 ### Node Editor - 
-![Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/node_editor/ReadMe.md)
+[Readme.md](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/node_editor/ReadMe.md)
+
+![Theme](https://github.com/Mansi145/AS39_Cyber_Punks/blob/master/front3.png)
