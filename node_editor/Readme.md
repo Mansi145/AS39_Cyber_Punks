@@ -15,6 +15,7 @@ This repo includes the code for editor and video chat.
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 git clone --branch master https://github.com/Mansi145/AS39_Cyber_Punks && cd node_editor/ && bin/run.sh
+Setup Mysql
 ```
 
 ### Manual install
@@ -23,7 +24,6 @@ You'll need git and [node.js](https://nodejs.org) installed (minimum required No
 
 To update to the latest released version, execute `git pull origin`. The next start with `node_editor/bin/run.sh` will update the dependencies.
 
-[Next steps](#next-steps).
 
 ## Windows
 
@@ -42,7 +42,7 @@ Update to the latest version with `git pull origin`, then run `node_editor\bin\i
 Similarly, `--credentials` can be used to give a settings override file, `--apikey` to give a different APIKEY.txt file and `--sessionkey` to give a non-default SESSIONKEY.txt.
 2. SSL Certificate can be added to the node_editor and also set path in settings.
 3. TURN\STUN servers ip can be added to the settings.json 
-
+4. Add all db and other information in settings.json
 
 you should use a dedicated database such as `mysql`, 
 
