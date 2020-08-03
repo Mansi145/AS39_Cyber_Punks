@@ -29,6 +29,7 @@ class AdminController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'user_type' => $data['user_type'],
             'is_admin' => isset($data['super_admin']) ? 1 : 0,
         ]);
         return back()->with(['msg' =>'User created successfully', 'class' => 'alert-success']);
@@ -40,17 +41,20 @@ class AdminController extends Controller
             ->editColumn('name', function (User $u) {
                 return $u->name;
             })
+            ->addColumn('user_type', function (User $u) {
+                return $u->user_type;
+            })
             ->editColumn('created_at', function (User $u) {
                 return $u->created_at->diffForHumans();
             })
             ->addColumn('action', function (User $u) {
                 if ($u->id != Auth::id()) {
-                    return '<a href="'.route('users.edit', $u->id).'" target="_blank" class="d-inline btn btn-primary">
-                    <i class="fas fa-pencil-alt mr-1"></i> Edit</a> &nbsp;
-                    <form action="'.route('users.destroy', $u->id).'" method="POST" class="d-inline-block" id="delete_user">
+                    return '<a href="'.route('users.edit', $u->id).'" class="btn btn-primary btn-sm" style="margin-left:5px">
+                    <i class="fas fa-pencil-alt mr-1"></i> Edit</a>
+                    <form action="'.route('users.destroy', $u->id).'" method="POST" class="" id="delete_user">
                         '.csrf_field().'
                         <input type="hidden" name="_method" value="DELETE">
-                        <button class="btn btn-danger" id="delete_user_button"><i class="fas fa-trash-alt mr-1"></i> Delete</button>
+                        <button class="btn btn-danger btn-sm" id="delete_user_button"><i class="fas fa-trash-alt mr-1"></i> Delete</button>
                     </form>';
                 }
             })
@@ -81,6 +85,7 @@ class AdminController extends Controller
             $user->name = $data['name'];
             $user->password = Hash::make($data['password']);
             $user->is_admin = isset($data['super_admin']) ? 1 : 0;
+            $user->user_type = $data['user_type'];
             $user->save();
         }
         return back()->with(['msg' =>'User details has been updated successfully', 'class' => 'alert-success']);
