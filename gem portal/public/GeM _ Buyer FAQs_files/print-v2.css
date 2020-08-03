@@ -1,0 +1,34 @@
+@media print{ 
+    body {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 1em;
+        color: #333333;
+        margin-top: 2cm;
+        margin-right: 2cm;
+        margin-bottom: 1.5cm;
+        margin-left: 2cm
+    }
+    .inline-menu{display:none;}/*header/footer main menu*/
+    .mse{display:none;}/*Languages header menu*/
+    .single-item{width:650px;} /*Banner*/
+    .searchwrp{margin-bottom: 50px;} /*Modi*/
+    .single-itemnmhome{display:none;} /*Top 5 product and sevice*/
+    .slbut{display:none;} /*View all product and sevice*/
+    .notification{text-align: center;} /*notification*/
+    .newsroom{text-align: center;}/*newsroom*/ 
+    .connect{display:none;} /*facebook twitter*/
+ .searchwrp{display:none;}
+    a[href]:after {
+    content: none !important;
+  }
+  .footer-logo-new{
+		display:block!important;
+	}
+
+}
+
+@media (max-width: 798px){
+	.footer-logo-new{
+		display:none;
+	}
+}
