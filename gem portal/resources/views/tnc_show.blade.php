@@ -3,11 +3,12 @@
 
 <div class="card">
 	<div class="card-body">
-		<p class="h1 text-center"><span class="h1">{{ $title }}</span> (v{{ $version }}) &nbsp <button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#basicExampleModal"><i class="fa fa-users mr-1"></i>Share</button><span>@if(Auth::id() == $owner_id)@if($is_freeze == 0 )<a href="{{ url('/tnc/'.$tnc_id.'?freeze=1') }}" class="btn btn-sm btn-danger"><i class="fa fa-lock mr-1"></i>Freeze</a>@elseif($is_freeze == 1 )<a href="{{ url('/tnc/'.$tnc_id.'?freeze=0') }}" class="btn btn-sm btn-success"><i class="fa fa-lock mr-1"></i>UnFreeze</a>@endif @endif</span></p>
+		<p class="text-center"><span class="h1">{{ $title }}</span> (v{{ $version }}) &nbsp <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#basicExampleModal"><i class="fa fa-users mr-1"></i>Share</button><span>@if(Auth::id() == $owner_id)@if($is_freeze == 0 )<a href="{{ url('/tnc/'.$tnc_id.'?freeze=1') }}" class="btn btn-sm btn-danger"><i class="fa fa-lock mr-1"></i>Freeze</a>@elseif($is_freeze == 1 )<a href="{{ url('/tnc/'.$tnc_id.'?freeze=0') }}" class="btn btn-sm btn-success"><i class="fa fa-lock mr-1"></i>UnFreeze</a>@endif @endif</span></p>
 		<p class="font-italic text-center">
 			Owned by <span class="font-weight-bold">{{ $owner }}</span><br>
 			Last Edited on <span class="font-weight-bold">{{ $last_edit }}</span><br>
 		</p>
+
 		<!-- Button trigger modal -->
 
 		<!-- Modal -->
@@ -98,5 +99,6 @@
 		$('#basicExampleModal').modal('hide');
 		$('#exampleModalLongSC').modal('show');
 	}
+
 </script>
 @endsection

@@ -62,7 +62,6 @@
                 <option value="seller" {{ $user->user_type == "seller" ? ' selected' : ''}}>Seller</option>
             </select>
             <label class="mdb-main-label">User Type</label>
-
             <div class="md-form">
                 <input type="checkbox" class="form-check-input" id="materialUnchecked" name="super_admin">
                 <label class="form-check-label" for="materialUnchecked">Super Admin</label>

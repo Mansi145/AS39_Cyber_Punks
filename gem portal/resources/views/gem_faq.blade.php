@@ -2,6 +2,20 @@
 <!-- saved from url=(0027)https://gem.gov.in/userFaqs -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       
+
+      <script>
+       if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(reg){
+           }).catch(function(err) {
+          });
+       }
+      </script>
+      <link rel="manifest" href="/manifest.json">
+      <link rel="apple-touch-icon" href="/img/icon_32.png">
+      <meta name="theme-color" content="#F7F8F9"/>
+
+      
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -32,7 +46,7 @@
       <link href="./GeM _ Buyer FAQs_files/google-font.css" rel="stylesheet">
       <link href="./GeM _ Buyer FAQs_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
       <link href="./GeM _ Buyer FAQs_files/slick.css" rel="stylesheet">
-      <link href="./GeM _ Buyer FAQs_files/font.awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <link href="./GeM _ Buyer FAQs_files/reset-v8.css" rel="stylesheet">
       <link href="./GeM _ Buyer FAQs_files/roboto.css" rel="stylesheet">
       <link href="./GeM _ Buyer FAQs_files/custom-v143.css" rel="stylesheet">
@@ -107,39 +121,39 @@
       </style>
       <script src="./GeM _ Buyer FAQs_files/cookie.js"></script>
    <script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script><script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script><script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script><script type="text/javascript" async="" src="./GeM _ Buyer FAQs_files/apxor.min.js"></script><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans);#flox-chat-iframe-wrapper-outer {    display: block;    z-index: 10000;    width: 100vw;    background-color: transparent;    border-radius: 30px}#flox-chat-img {    z-index: 10001}#flox-chat-close,#flox-chat-img,#flox-chat-mob-ancr {    bottom: 42px;    cursor: pointer;    color: var(--font-white);    outline: none;    position: fixed;    width: auto;}#flox-chat-close img {    position: relative;    background-position: center top}#flox-chat-img img {    vertical-align: middle;    margin-bottom: 0;    box-sizing: content-box;}#flox-chat-close {    z-index: 999;    background: 0 0;    width: 28px;    height: 17px;    background-color: #26acae;    text-align: center;    position: fixed;    display: block;    padding: 10px 16px;    display: flex;    flex-direction: column;    align-items: center;    justify-content: center;    font-family: Roboto;    height: 28px;    line-height: 28px;    font-size: 18px;    color: #FFFFFF;    -webkit-box-sizing: unset;    -moz-box-sizing: unset;    -ms-box-sizing: unset;    box-sizing: unset;}#flox-chat-iframe {    position: static;    border: none;    border-radius: 0px;    vertical-align: middle;    width: 100%;    height: calc(100%);    min-height: 173px}#flox-chat-iframe-wrapper.fadeout,#flox-chat-iframe-wrapper.fadein {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.contract,#flox-chat-iframe-wrapper.expand {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-width: 180px;    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.left {    left: 20px}@keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-moz-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-webkit-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-moz-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-webkit-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@-moz-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        transform: scale(1);        opacity: 1;    }}@-webkit-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-moz-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-webkit-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}#flox-chat-iframe-wrapper.fadein {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShow;    -webkit-animation-name: wrapperShow;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.fadeout {    height: 0;    min-height: 0;    animation-name: wrapperHide;    -webkit-animation-name: wrapperHide;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.expand {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShowExpand;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperShowExpand;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s}#flox-chat-iframe-wrapper.contract {    animation-name: wrapperHideContract;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperHideContract;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s;    transform: scale(0);}.flox-chat-title {    text-align: center;    vertical-align: middle;    bottom: 0;    position: relative;    font-size: 16px;    font-weight: 700;    color: #FFF;    opacity: 1;    font-family: 'Open Sans';    -webkit-transition: opacity 1s;    transition: opacity 1s linear}.cb-circle,.flox-toolTipBox {    text-align: center;    background-color: #FFF;    font-family: arial}#flox-chat-mob-ancr {    z-index: 100}@keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-moz-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-webkit-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@keyframes csCloseBtnSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-webkit-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-moz-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@media screen and (min-width:0) and (max-width:600px) {    #flox-chat-mob-ancr {        display: block;        z-index: 1000000;        opacity: 0    }    #flox-mobile-anchor {        width: auto;        height: 51px;        display: block    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}@media screen and (min-width:600px) and (max-width:1023px) {    #flox-chat-iframe-wrapper {        bottom: 400px    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}#flox-chat-close.slideCloseButtonUp{    animation-name: csCloseBtnSlideUp;    -webkit-animation-name: csCloseBtnSlideUp;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    width: auto;    display: flex;    opacity: 1;}#flox-chat-close.cs-close-top{    height: 12px;    line-height: 12px;    padding: 7px;    border-radius: 25px;    webkit-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);}#flox-chat-img.slideright {    animation-name: csSlideUp;    -webkit-animation-name: csSlideUp;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s;    width: auto;    opacity: 1;}#flox-chat-img.slideleft {    animation-name: csSlideDown;    -webkit-animation-name: csSlideDown;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    padding: 0;    opacity: 0;    z-index: -1000}@keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@-webkit-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        -webkit-opacity: 0    }    50% {        -webkit-opacity: 0    }    100% {        right: 0;        position: absolute;        -webkit-opacity: 1    }}@-moz-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-moz-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-webkit-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        -webkit-opacity: 1    }    10% {        -webkit-opacity: 0    }    100% {        -webkit-opacity: 0;        right: 100px    }}@-webkit-keyframes float {    0%,    100% {        box-shadow: 0 5px 15px 0 rgba(175, 175, 175, .6);        transform: translatey(0)    }    50% {        box-shadow: 0 15px 15px 0 rgba(175, 175, 175, .2);        transform: translatey(-3px)    }}#flox-text-item {    color: #FFF;    overflow: hidden;    font-size: 16px;    right: 0}#flox-text-items.slideright {    animation-name: rightFadeInOut;    animation-duration: .21s;    opacity: 1;    -webkit-opacity: 1}#flox-text-items.slideleft {    opacity: 0;    width: auto;    animation-name: leftFadeInOut;    -webkit-animation-name: leftFadeInOut;    animation-duration: .21s;    -webkit-animation-duration: .21s}#flox-chat-mob-ancr {    width: 160px;    display: none}#flox-chat-close.flox-hideHeader {    top: 0!important;    right: 0!important;    padding: 0!important;    width: auto}.flox-hideHeader img {    width: 18px;    height: 18px;    padding: 3px;    background-color: grey;    border-radius: 7px}.flox-circle_2:before,.flox-circle_3:before {    content: '';    background: #fff}.cb-circle {    width: 250px;    border: 5px solid #00bfb6;    padding: 80px 0;    margin: 30px auto;    border-radius: 50%;    font-size: 24px;    font-weight: 900;    position: relative;    color: #00bfb6}.flox-circle_2,.flox-circle_2:before {    position: absolute;    width: 25px;    padding: 20px}.flox-circle_2 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -15px;    bottom: 15px}.flox-circle_2:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-circle_3,.flox-circle_3:before {    position: absolute;    width: 5px;    padding: 10px 15px}.flox-circle_3 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -35px;    bottom: 13px}.flox-circle_3:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-toolTipBox {    z-index: 100;    cursor: pointer;    width: auto;    border: 1px solid #eaeaea;    padding: 10px 10px 10px 20px;    color: #797979;    position: fixed;    transform: translatey(0);    animation: float 3s ease-in-out infinite}.default_arrow:after,.default_arrow:before {    content: '';    width: 0;    height: 0;    position: absolute;    border-left: 7px solid transparent;    border-bottom: 10px solid transparent}.default_arrow:before {    border-right: 10px solid #949591;    border-top: 7px solid #949591;    right: 22px;    bottom: -18px}.default_arrow:after {    border-right: 10px solid #fff;    border-top: 7px solid #fff;    right: 24px;    bottom: -13px}.flox-toolTipHeaderWrapper {    display: inline-block;    margin-right: 20px;    text-align: left;    vertical-align: middle}#flox-toolTipImage {    background-color: #26acae;    vertical-align: middle;    margin-bottom: 0}.flox-toolTipBoxCaption {    font-size: 11px;    line-height: 15px}.flox-toolTipHeader {    font-size: 14px;    line-height: 18px;    font-weight: 600;    font-family: 'Open Sans'}</style></head>
+         // injected DOM script is not a content script anymore,
+         // it can modify objects and functions of the page
+         var _pushState = history.pushState;
+         history.pushState = function(state, title, url) {
+            _pushState.call(this, state, title, url);
+            window.dispatchEvent(
+               new CustomEvent('state-changed', { detail: url })
+            );
+         };
+         // repeat the above for replaceState too
+      })();</script><script>(function() {
+         // injected DOM script is not a content script anymore,
+         // it can modify objects and functions of the page
+         var _pushState = history.pushState;
+         history.pushState = function(state, title, url) {
+            _pushState.call(this, state, title, url);
+            window.dispatchEvent(
+               new CustomEvent('state-changed', { detail: url })
+            );
+         };
+         // repeat the above for replaceState too
+      })();</script><script>(function() {
+         // injected DOM script is not a content script anymore,
+         // it can modify objects and functions of the page
+         var _pushState = history.pushState;
+         history.pushState = function(state, title, url) {
+            _pushState.call(this, state, title, url);
+            window.dispatchEvent(
+               new CustomEvent('state-changed', { detail: url })
+            );
+         };
+         // repeat the above for replaceState too
+      })();</script><script type="text/javascript" async="" src="./GeM _ Buyer FAQs_files/apxor.min.js"></script><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans);#flox-chat-iframe-wrapper-outer {    display: block;    z-index: 10000;    width: 100vw;    background-color: transparent;    border-radius: 30px}#flox-chat-img {    z-index: 10001}#flox-chat-close,#flox-chat-img,#flox-chat-mob-ancr {    bottom: 42px;    cursor: pointer;    color: var(--font-white);    outline: none;    position: fixed;    width: auto;}#flox-chat-close img {    position: relative;    background-position: center top}#flox-chat-img img {    vertical-align: middle;    margin-bottom: 0;    box-sizing: content-box;}#flox-chat-close {    z-index: 999;    background: 0 0;    width: 28px;    height: 17px;    background-color: #26acae;    text-align: center;    position: fixed;    display: block;    padding: 10px 16px;    display: flex;    flex-direction: column;    align-items: center;    justify-content: center;    font-family: Roboto;    height: 28px;    line-height: 28px;    font-size: 18px;    color: #FFFFFF;    -webkit-box-sizing: unset;    -moz-box-sizing: unset;    -ms-box-sizing: unset;    box-sizing: unset;}#flox-chat-iframe {    position: static;    border: none;    border-radius: 0px;    vertical-align: middle;    width: 100%;    height: calc(100%);    min-height: 173px}#flox-chat-iframe-wrapper.fadeout,#flox-chat-iframe-wrapper.fadein {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.contract,#flox-chat-iframe-wrapper.expand {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-width: 180px;    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.left {    left: 20px}@keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-moz-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-webkit-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-moz-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-webkit-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@-moz-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        transform: scale(1);        opacity: 1;    }}@-webkit-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-moz-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-webkit-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}#flox-chat-iframe-wrapper.fadein {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShow;    -webkit-animation-name: wrapperShow;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.fadeout {    height: 0;    min-height: 0;    animation-name: wrapperHide;    -webkit-animation-name: wrapperHide;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.expand {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShowExpand;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperShowExpand;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s}#flox-chat-iframe-wrapper.contract {    animation-name: wrapperHideContract;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperHideContract;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s;    transform: scale(0);}.flox-chat-title {    text-align: center;    vertical-align: middle;    bottom: 0;    position: relative;    font-size: 16px;    font-weight: 700;    color: #FFF;    opacity: 1;    font-family: 'Open Sans';    -webkit-transition: opacity 1s;    transition: opacity 1s linear}.cb-circle,.flox-toolTipBox {    text-align: center;    background-color: #FFF;    font-family: arial}#flox-chat-mob-ancr {    z-index: 100}@keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-moz-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-webkit-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@keyframes csCloseBtnSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-webkit-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-moz-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@media screen and (min-width:0) and (max-width:600px) {    #flox-chat-mob-ancr {        display: block;        z-index: 1000000;        opacity: 0    }    #flox-mobile-anchor {        width: auto;        height: 51px;        display: block    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}@media screen and (min-width:600px) and (max-width:1023px) {    #flox-chat-iframe-wrapper {        bottom: 400px    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}#flox-chat-close.slideCloseButtonUp{    animation-name: csCloseBtnSlideUp;    -webkit-animation-name: csCloseBtnSlideUp;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    width: auto;    display: flex;    opacity: 1;}#flox-chat-close.cs-close-top{    height: 12px;    line-height: 12px;    padding: 7px;    border-radius: 25px;    webkit-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);}#flox-chat-img.slideright {    animation-name: csSlideUp;    -webkit-animation-name: csSlideUp;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s;    width: auto;    opacity: 1;}#flox-chat-img.slideleft {    animation-name: csSlideDown;    -webkit-animation-name: csSlideDown;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    padding: 0;    opacity: 0;    z-index: -1000}@keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@-webkit-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        -webkit-opacity: 0    }    50% {        -webkit-opacity: 0    }    100% {        right: 0;        position: absolute;        -webkit-opacity: 1    }}@-moz-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-moz-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-webkit-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        -webkit-opacity: 1    }    10% {        -webkit-opacity: 0    }    100% {        -webkit-opacity: 0;        right: 100px    }}@-webkit-keyframes float {    0%,    100% {        box-shadow: 0 5px 15px 0 rgba(175, 175, 175, .6);        transform: translatey(0)    }    50% {        box-shadow: 0 15px 15px 0 rgba(175, 175, 175, .2);        transform: translatey(-3px)    }}#flox-text-item {    color: #FFF;    overflow: hidden;    font-size: 16px;    right: 0}#flox-text-items.slideright {    animation-name: rightFadeInOut;    animation-duration: .21s;    opacity: 1;    -webkit-opacity: 1}#flox-text-items.slideleft {    opacity: 0;    width: auto;    animation-name: leftFadeInOut;    -webkit-animation-name: leftFadeInOut;    animation-duration: .21s;    -webkit-animation-duration: .21s}#flox-chat-mob-ancr {    width: 160px;    display: none}#flox-chat-close.flox-hideHeader {    top: 0!important;    right: 0!important;    padding: 0!important;    width: auto}.flox-hideHeader img {    width: 18px;    height: 18px;    padding: 3px;    background-color: grey;    border-radius: 7px}.flox-circle_2:before,.flox-circle_3:before {    content: '';    background: #fff}.cb-circle {    width: 250px;    border: 5px solid #00bfb6;    padding: 80px 0;    margin: 30px auto;    border-radius: 50%;    font-size: 24px;    font-weight: 900;    position: relative;    color: #00bfb6}.flox-circle_2,.flox-circle_2:before {    position: absolute;    width: 25px;    padding: 20px}.flox-circle_2 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -15px;    bottom: 15px}.flox-circle_2:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-circle_3,.flox-circle_3:before {    position: absolute;    width: 5px;    padding: 10px 15px}.flox-circle_3 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -35px;    bottom: 13px}.flox-circle_3:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-toolTipBox {    z-index: 100;    cursor: pointer;    width: auto;    border: 1px solid #eaeaea;    padding: 10px 10px 10px 20px;    color: #797979;    position: fixed;    transform: translatey(0);    animation: float 3s ease-in-out infinite}.default_arrow:after,.default_arrow:before {    content: '';    width: 0;    height: 0;    position: absolute;    border-left: 7px solid transparent;    border-bottom: 10px solid transparent}.default_arrow:before {    border-right: 10px solid #949591;    border-top: 7px solid #949591;    right: 22px;    bottom: -18px}.default_arrow:after {    border-right: 10px solid #fff;    border-top: 7px solid #fff;    right: 24px;    bottom: -13px}.flox-toolTipHeaderWrapper {    display: inline-block;    margin-right: 20px;    text-align: left;    vertical-align: middle}#flox-toolTipImage {    background-color: #26acae;    vertical-align: middle;    margin-bottom: 0}.flox-toolTipBoxCaption {    font-size: 11px;    line-height: 15px}.flox-toolTipHeader {    font-size: 14px;    line-height: 18px;    font-weight: 600;    font-family: 'Open Sans'}</style></head>
    <body onload="checkCookie()" id="bodyId" class="hows1">
       <section class="sec mobhead">
          <div class="col-md-12 col-xs-12">
@@ -303,7 +317,7 @@
          <section class="deskhead">
             <section class="sc black-top">
                <div class="cont clearfix topse">
-			      <ul class="inline-menu top-head text-left pull-left" style="margin-left: 5px;">
+               <ul class="inline-menu top-head text-left pull-left" style="margin-left: 5px;">
                      <li class="tabindex-focus">
                          <div class="select-style" style="width:80px;">
                            <select onchange="redirect(this.value, event)" id="languageChange">
@@ -355,7 +369,7 @@
                         </li>
                      </ul>
                   </div>
-				  
+              
                </div>
             </section>
          </section>
@@ -397,7 +411,7 @@
                      <div class="col-sm-3 col-md-4 col-xs-12  ">
                         <ul id="navigation" class="inline-menu text-right hemen horizontal" style="margin-right: -0.9em;"><li class="haschild subhemen hasmenu hasmenu"><a href="javascript:void(0);" title="Bids" id="nov-color">Bids &nbsp; <i class="fa fa-caret-down text-danger" aria-hidden="true"></i></a><ul><li><a href="https://bidplus.gem.gov.in/bidlists" target="_blank" title="Ongoing Bids">Ongoing Bids</a></li><li class="last-style"><a href="https://bidplus.gem.gov.in/bidresultlists" title="Bid/RA Status" target="_blank">Bid/RA Status                                    </a></li></ul></li><li class="haschild hasmenu"><a href="javascript:void(0);" class="" id="nov-color" title="Sign Up"> Sign Up&nbsp; <i class="fa fa-caret-down text-danger" aria-hidden="true"></i></a><ul><li><a href="https://mkp.gem.gov.in/registration/signup#!/buyer" title="Buyers">Buyers </a></li><li class="last-style"><a href="https://mkp.gem.gov.in/registration/signup#!/seller" title="Sellers">Sellers</a></li></ul></li><li><a href="https://sso.gem.gov.in/ARXSSO/oauth/login" title="Login" id="nov-color" class="ignore_append"> Login</a></li></ul>
                      </div>
-					 <div class="clearfix"></div>
+                <div class="clearfix"></div>
                   </div>
                </div>
             </section>
@@ -411,21 +425,21 @@
                             <div class="cat_menu_text "><a href="javascript:void(0);"><i class="fa fa-bars" style="    margin-right: 13px;"></i> categories </a></div>
                         </div>
                         <ul class="cat_menu">
-						
+                  
                             <li class="hassubs"><a href="javascript:void(0);">Products &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px"></i></a>
-						    <ul class="dropdown-cate">
+                      <ul class="dropdown-cate">
                                  <li>
                                  <a href="javascript:void(0);" class="dropdown-cate-a">Computers</a>
-								 <div class="filter clearfix">
-								 <p><a href="https://mkp.gem.gov.in/computers-desktop-computer/search" class=" ">Desktops</a></p>
+                         <div class="filter clearfix">
+                         <p><a href="https://mkp.gem.gov.in/computers-desktop-computer/search" class=" ">Desktops</a></p>
     <p><a href="https://mkp.gem.gov.in/computers-0806nb/search" class=" ">Laptops</a></p>
     <p><a href="https://mkp.gem.gov.in/computers-0806aio/search" class=" ">All in One</a></p>
     <p><a href="https://mkp.gem.gov.in/computers-server/search" class=" ">Servers</a></p>
-								 </div>
+                         </div>
                                  </li>
                                  <li><a href="javascript:void(0);" class="dropdown-cate-a">Office Machines</a>
-								   <div class="filter clearfix">
-								 <p><a href="https://mkp.gem.gov.in/duplicating-machines-0901mfm/search" class=" ">Multifunction Machines</a></p>
+                           <div class="filter clearfix">
+                         <p><a href="https://mkp.gem.gov.in/duplicating-machines-0901mfm/search" class=" ">Multifunction Machines</a></p>
   
 
   
@@ -441,11 +455,11 @@
   
   
     <p><a href="https://mkp.gem.gov.in/projectors-and-supplies-28052-mmp/search" class=" ">Multimedia Projector (MMP)</a></p>
-								 </div>
-								 </li>
-								  <li><a href="javascript:void(0);" class="dropdown-cate-a">Automobiles</a>
-								   <div class="filter clearfix">
-								 <p><a href="https://mkp.gem.gov.in/cars/search" class=" ">Cars</a></p>
+                         </div>
+                         </li>
+                          <li><a href="javascript:void(0);" class="dropdown-cate-a">Automobiles</a>
+                           <div class="filter clearfix">
+                         <p><a href="https://mkp.gem.gov.in/cars/search" class=" ">Cars</a></p>
   
 
   
@@ -461,11 +475,11 @@
   
   
     <p><a href="https://mkp.gem.gov.in/ambulances/search" class=" ">Ambulance</a></p>
-								 </div>
-								 </li>
-								  <li><a href="javascript:void(0);" class="dropdown-cate-a">Office Supplies</a>
-								   <div class="filter clearfix">
-								 <p><a href="https://mkp.gem.gov.in/un000000-un000000-1-un000000-2-ball-point-pen/search" class=" ">Ball Point Pen</a></p>
+                         </div>
+                         </li>
+                          <li><a href="javascript:void(0);" class="dropdown-cate-a">Office Supplies</a>
+                           <div class="filter clearfix">
+                         <p><a href="https://mkp.gem.gov.in/un000000-un000000-1-un000000-2-ball-point-pen/search" class=" ">Ball Point Pen</a></p>
   
 
   
@@ -477,11 +491,11 @@
   
     <p><a href="https://mkp.gem.gov.in/writing-and-printing-paper-plain-copier-paper/search" class=" ">Printer or Photo Copier Paper</a></p>
   
-								 </div>
-								 </li>
-								  <li><a href="javascript:void(0);" class="dropdown-cate-a">Appliances</a>
-								   <div class="filter clearfix">
-								 
+                         </div>
+                         </li>
+                          <li><a href="javascript:void(0);" class="dropdown-cate-a">Appliances</a>
+                           <div class="filter clearfix">
+                         
     <p><a href="https://mkp.gem.gov.in/domestic-appliances-and-supplies-and-consumer-electronic-products-consumer-electronics-audio-and-visual-equipmentold-28051-tv/search" class=" ">Televisions</a></p>
   
 
@@ -493,12 +507,12 @@
   
   
     <p><a href="https://mkp.gem.gov.in/online-ups/search" class=" ">Online UPS</a></p>
-								 </div>
-								 
-								 </li>
+                         </div>
+                         
+                         </li>
                                
                               </ul>
-						   </li>
+                     </li>
                            
 
                            <li>
@@ -527,7 +541,7 @@
                            <li>
                                <a href="https://gem.gov.in/contactUs" title="" id="nov-color">Contact Us</a>
                            </li>
-						   <li><a href="https://gem.gov.in/user_feedback" target="_blank" id="nov-color">Rate a Seller</a></li>
+                     <li><a href="https://gem.gov.in/user_feedback" target="_blank" id="nov-color">Rate a Seller</a></li>
 
                                                   <li><a href="https://gem.gov.in/view_contracts" id="nov-color">View Contracts</a></li>
 
@@ -567,12 +581,12 @@
 </div>
 <section class="sec" id="skip_main_content">
     <div class="cont">
-	 <div class="col-md-12">
-	<nav aria-label="breadcrumb">
+    <div class="col-md-12">
+   <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://gem.gov.in/" title="Home">Home</a></li>
     <li class="breadcrumb-item" aria-current="page">Need Help ?</li>
-	 <li class="breadcrumb-item active" aria-current="page">Frequently Asked Questions (FAQs)</li>
+    <li class="breadcrumb-item active" aria-current="page">Frequently Asked Questions (FAQs)</li>
   </ol>
   </nav>
   </div>
@@ -3349,42 +3363,42 @@ Once bank has completed the on boarding of NPAE in GEM portal, the NPAE can star
 </div>
 
 <div class="clearfix">&nbsp;</div>
-</div>	  <div class="clearfix"></div>
+</div>     <div class="clearfix"></div>
    <div class="footer-logo-new sec hidden-xs">
     <div class="col-sm-12 vis">
 
          <ul class="text-center list-inline flogo">
-	<li><a class="externalLink" href="http://commerce.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Ministry of Commerce and Industry" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/dept-commerce.png"></a></li>
-	<li><a class="externalLink" href="https://msme.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Ministry of Micro, Small  Medium Enterprises" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/msme-min.png"></a></li>
-	<li><a class="externalLink" href="https://www.gst.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Goods and Services Tax" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/gst-min1-min.png"></a></li>
-	<li><a class="externalLink" href="http://www.makeinindia.com/home" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="make in india" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/makeinindia.png"></a></li>
-	<li><a class="externalLink" href="http://digitalindia.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Digital India" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/digital-india.png"></a></li>
-	<li><a class="externalLink" href="https://www.india.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="india.gov.in" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/gem-india.jpg"></a></li>
-	<li><a class="externalLink" href="https://eprocure.gov.in/eprocure/app" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/jsons/1591430226_820812435.jpg" style="width: 91px; height: 40px;"></a></li>
-	<li><a class="externalLink" href="https://www.comodo.com/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="comodo secure seal" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/comodo_secure_seal.png"></a></li>
-	<li><a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/Application_Security_Test_Report_GeM_21122018.pdf" target="_blank" title="STQC Certification for Quality Evaluation of GeM"><img alt="Standardisation Testing and Quality Certification (STQC)" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/stqc-1-min.png"></a></li>
-	<li><a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/stqc.pdf" target="_blank" title="STQC"><img alt="Standardisation Testing and Quality Certification (STQC)" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/stqc-2-min.png"></a></li>
+   <li><a class="externalLink" href="http://commerce.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Ministry of Commerce and Industry" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/dept-commerce.png"></a></li>
+   <li><a class="externalLink" href="https://msme.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Ministry of Micro, Small  Medium Enterprises" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/msme-min.png"></a></li>
+   <li><a class="externalLink" href="https://www.gst.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Goods and Services Tax" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/gst-min1-min.png"></a></li>
+   <li><a class="externalLink" href="http://www.makeinindia.com/home" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="make in india" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/makeinindia.png"></a></li>
+   <li><a class="externalLink" href="http://digitalindia.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="Digital India" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/digital-india.png"></a></li>
+   <li><a class="externalLink" href="https://www.india.gov.in/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="india.gov.in" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/gem-india.jpg"></a></li>
+   <li><a class="externalLink" href="https://eprocure.gov.in/eprocure/app" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/jsons/1591430226_820812435.jpg" style="width: 91px; height: 40px;"></a></li>
+   <li><a class="externalLink" href="https://www.comodo.com/" rel="noopener noreferrer" title="External link that opens in a new window"><img alt="comodo secure seal" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/comodo_secure_seal.png"></a></li>
+   <li><a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/Application_Security_Test_Report_GeM_21122018.pdf" target="_blank" title="STQC Certification for Quality Evaluation of GeM"><img alt="Standardisation Testing and Quality Certification (STQC)" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/stqc-1-min.png"></a></li>
+   <li><a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/stqc.pdf" target="_blank" title="STQC"><img alt="Standardisation Testing and Quality Certification (STQC)" rel="imgLazy" data-src="https://assets-bg.gem.gov.in/resources/images/stqc-2-min.png"></a></li>
 </ul>       
       </div>
-	  <div class="clearfix"></div>
+     <div class="clearfix"></div>
    </div>
     <div class="footer-logo-bot sec">
    <div class="cont">
    <div class="row">
            <div class="col-sm-2 vis col-xs-4">
             <p class="copyright-gem">© 2020 GeM All rights reserved </p>
-			<p class="copyright-gem">Last Updated: <strong>19-Sep-2019</strong></p>
-			
+         <p class="copyright-gem">Last Updated: <strong>19-Sep-2019</strong></p>
+         
         </div>
-		
+      
      <div class="col-sm-6 col-xs-8">
-	   <div class="stqc-gem text-center">
-			   
-			 
-			   
+      <div class="stqc-gem text-center">
+            
+          
+            
          <p class="copyright-gem">Site operated and maintained by Managed Service Provider</p>
-			   </div>
-			   </div>
+            </div>
+            </div>
       <div class="col-sm-4 col-xs-12 text-center">
          <ul class=" list-inline fsco">
             <li>
@@ -3398,34 +3412,34 @@ Once bank has completed the on boarding of NPAE in GEM portal, the NPAE can star
             </li>
          </ul>
       </div>
-	  </div>
+     </div>
    </div>
     <div class="clearfix"></div>
    </div>
    <div class="cd-popup" style="display:none;" role="alert">
         <div class="cd-popup-container">
                 <p id="confirm-msg"></p>
-				<div class="col-md-12 popborder">
+            <div class="col-md-12 popborder">
                 <ul class="cd-buttons">
                         <li><a href="javascript:void(0);">OK</a></li>
                         <li><a href="javascript:void(0);">Cancel</a></li>
                 </ul>
-				</div>
-				<div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
                 <a href="javascript:void(0);" class="cd-popup-close img-replace">Close</a>
         </div> <!-- cd-popup-container -->
     </div> <!-- cd-popup -->
     <div class="cd-popup-lang" tabindex="-1" style="display:none;" role="alert">
         <div class="cd-popup-container">
                 <p id="confirm-msg"></p>
-				<div class="col-md-12 popborder">
+            <div class="col-md-12 popborder">
                 <ul class="cd-buttons">
                         <li class="on-focus" tabindex="100"><a href="javascript:void(0);" class="animated-button victoria-two">OK</a></li>
                         <li class="on-focus" tabindex="101"><a href="javascript:void(0);">Cancel</a></li>
                 </ul>
-				</div>
-				<div class="clearfix"></div>
-				
+            </div>
+            <div class="clearfix"></div>
+            
                 <a href="javascript:void(0);" class="cd-popup-close img-replace">Close</a>
         </div> <!-- cd-popup-container -->
     </div> <!-- cd-popup -->
@@ -3433,14 +3447,14 @@ Once bank has completed the on boarding of NPAE in GEM portal, the NPAE can star
     <div class="cd-popup-internal" style="display:none;" role="alert">
         <div class="cd-popup-container">
                 <p id="confirm-msg"></p>
-				<div class="col-md-12 popborder">
+            <div class="col-md-12 popborder">
                 <ul class="cd-buttons">
                         <li><a href="javascript:void(0);">OK</a></li>
                         <li><a href="javascript:void(0);">Cancel</a></li>
                 </ul>
-				</div>
-				<div class="clearfix"></div>
-				
+            </div>
+            <div class="clearfix"></div>
+            
                 <a href="javascript:void(0);" class="cd-popup-close img-replace">Close</a>
         </div> <!-- cd-popup-container -->
     </div> <!-- cd-popup -->
@@ -3463,7 +3477,7 @@ Once bank has completed the on boarding of NPAE in GEM portal, the NPAE can star
 <script src="./GeM _ Buyer FAQs_files/autocomplete-v1.js"></script>
 <link rel="stylesheet" href="./GeM _ Buyer FAQs_files/autocomplete.css">
 <link rel="stylesheet" href="./GeM _ Buyer FAQs_files/style-v2.css"><!-- Resource style -->
-	  <script>
+     <script>
 $('#target-id').focusin(  
   function(){  
     $(this).addClass('cat-fileopen ul');  
@@ -3652,11 +3666,11 @@ function redirect(val,event){
             window.location.reload();
         }
     });
-	//close popup when clicking the esc keyboard button
+   //close popup when clicking the esc keyboard button
     $(document).keyup(function(event){
-    	if(event.which=='27'){
+      if(event.which=='27'){
             $('.cd-popup-lang').removeClass('is-visible');
-	}
+   }
     });
     $('.cd-popup-lang').keypress(function(event){
         if(event.which == 13){//Enter key pressed
@@ -3731,7 +3745,7 @@ $(this).parent().parent().removeClass('open');
 </script>
 
 <script>
-	$(document).ready(function(){    
+   $(document).ready(function(){    
             $('.on-focus').click(function() {
                 if($(this).hasClass('open') && $(this).hasClass('hover')){
                     $(this).find("ul" ).css('display','none');
@@ -4104,40 +4118,40 @@ $(".hassubs").mouseover(function() {
 
 </script>-->
 <script type="text/javascript">
-	jQuery(document).ready(function(){
+   jQuery(document).ready(function(){
 
-		//Check to see if the window is top if not then display button
-		jQuery(window).scroll(function(){
-			if (jQuery(this).scrollTop() > 100) {
-				jQuery('.scrollToTop').fadeIn();
-			} else {
-				jQuery('.scrollToTop').fadeOut();
-			}
-		});
+      //Check to see if the window is top if not then display button
+      jQuery(window).scroll(function(){
+         if (jQuery(this).scrollTop() > 100) {
+            jQuery('.scrollToTop').fadeIn();
+         } else {
+            jQuery('.scrollToTop').fadeOut();
+         }
+      });
 
-		//Click event to scroll to top
-		jQuery('.scrollToTop').click(function(){
-			jQuery('html, body').animate({scrollTop : 0},800);
-			return false;
-		});
-	
-		jQuery("#scrolltop-maincontent").click(function(){            
-			jQuery('html, body').animate({
+      //Click event to scroll to top
+      jQuery('.scrollToTop').click(function(){
+         jQuery('html, body').animate({scrollTop : 0},800);
+         return false;
+      });
+   
+      jQuery("#scrolltop-maincontent").click(function(){            
+         jQuery('html, body').animate({
             scrollTop: jQuery("#skip_main_content").offset().top
         }, 800);
-		});
-		
-		jQuery('.scrollToTop').click(function(){
-			jQuery('html, body').animate({scrollTop : 0},800);
-			return false;
-		});
-	
-		jQuery("#scrolltop-maincontent1").click(function(){            
-			jQuery('html, body').animate({
+      });
+      
+      jQuery('.scrollToTop').click(function(){
+         jQuery('html, body').animate({scrollTop : 0},800);
+         return false;
+      });
+   
+      jQuery("#scrolltop-maincontent1").click(function(){            
+         jQuery('html, body').animate({
             scrollTop: jQuery("#notification").offset().top
         }, 800);
-		});
-	});
+      });
+   });
 </script>
 <script>
 function myFunction() {

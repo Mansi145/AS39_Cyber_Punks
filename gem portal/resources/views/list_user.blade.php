@@ -1,6 +1,11 @@
 @extends('layouts.dashboard')
 @section('css')
 <link href="{{ url('css/addons/datatables.min.css') }}" rel="stylesheet">
+<style type="text/css">
+  #table_wrapper {
+    overflow: auto!important;
+  }
+</style>
 @endsection
 @section('content')
 <div class="card">

@@ -2,6 +2,20 @@
 <!-- saved from url=(0039)https://bidplus.gem.gov.in/servicelists -->
 <html class=" js cssanimations"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+
+      <script>
+       if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(reg){
+           }).catch(function(err) {
+          });
+       }
+      </script>
+      <link rel="manifest" href="/manifest.json">
+      <link rel="apple-touch-icon" href="/img/icon_32.png">
+      <meta name="theme-color" content="#F7F8F9"/>
+
+      
         
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Cache-Control" content="no-cache">
@@ -23,7 +37,7 @@
 
         <link rel="icon" href="https://bidplus.gem.gov.in/resources//images/favicon.png" type="image/favicon">
         <link href="./GeM _ Bid Lists_files/stylesheet_v1.css" rel="stylesheet" type="text/css" media="all">
-        <link href="./GeM _ Bid Lists_files/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="./GeM _ Bid Lists_files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 
         <link href="./GeM _ Bid Lists_files/style_v2-29.css" rel="stylesheet" type="text/css" media="all">
@@ -144,39 +158,39 @@ function getServiceOptions(){
     }
     </script>
     <script type="text/javascript" async="" src="./GeM _ Bid Lists_files/apxor.min.js"></script><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans);#flox-chat-iframe-wrapper-outer {    display: block;    z-index: 10000;    width: 100vw;    background-color: transparent;    border-radius: 30px}#flox-chat-img {    z-index: 10001}#flox-chat-close,#flox-chat-img,#flox-chat-mob-ancr {    bottom: 42px;    cursor: pointer;    color: var(--font-white);    outline: none;    position: fixed;    width: auto;}#flox-chat-close img {    position: relative;    background-position: center top}#flox-chat-img img {    vertical-align: middle;    margin-bottom: 0;    box-sizing: content-box;}#flox-chat-close {    z-index: 999;    background: 0 0;    width: 28px;    height: 17px;    background-color: #26acae;    text-align: center;    position: fixed;    display: block;    padding: 10px 16px;    display: flex;    flex-direction: column;    align-items: center;    justify-content: center;    font-family: Roboto;    height: 28px;    line-height: 28px;    font-size: 18px;    color: #FFFFFF;    -webkit-box-sizing: unset;    -moz-box-sizing: unset;    -ms-box-sizing: unset;    box-sizing: unset;}#flox-chat-iframe {    position: static;    border: none;    border-radius: 0px;    vertical-align: middle;    width: 100%;    height: calc(100%);    min-height: 173px}#flox-chat-iframe-wrapper.fadeout,#flox-chat-iframe-wrapper.fadein {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.contract,#flox-chat-iframe-wrapper.expand {    z-index: 100000!important;    width: 350px;    height: 540px;    max-width: calc(50vw);    max-width: 50%;    max-height: calc(100vh - 30px);    min-width: 180px;    min-height: 173px;    position: fixed!important;    border-radius: 0px;    overflow: hidden}#flox-chat-iframe-wrapper.left {    left: 20px}@keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-moz-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@-webkit-keyframes wrapperShow {    0% {        opacity: 0;        height: 540px;        min-height: 0;    }    100% {        opacity: 1;        height: 540px;    }}@keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-moz-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@-webkit-keyframes wrapperHide {    0% {        opacity: 1;        height: 540px;    }    100% {        opacity: 0;        height: 540px;        min-height: 0;    }}@keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@-moz-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        transform: scale(1);        opacity: 1;    }}@-webkit-keyframes wrapperShowExpand {    0% {        opacity: 0;        transform: scale(0);    }    100% {        opacity: 1;        transform: scale(1);    }}@keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-moz-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}@-webkit-keyframes wrapperHideContract {    0% {        opacity: 1;        transform: scale(1);    }    100% {        opacity: 0;        transform: scale(0);    }}#flox-chat-iframe-wrapper.fadein {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShow;    -webkit-animation-name: wrapperShow;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.fadeout {    height: 0;    min-height: 0;    animation-name: wrapperHide;    -webkit-animation-name: wrapperHide;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s}#flox-chat-iframe-wrapper.expand {    -webkit-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    box-shadow: -2px 24px 54px rgba(95, 95, 95, 0.64);    animation-name: wrapperShowExpand;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperShowExpand;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s}#flox-chat-iframe-wrapper.contract {    animation-name: wrapperHideContract;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    -webkit-animation-name: wrapperHideContract;    animation-duration: 0.3s;    -webkit-animation-duration: 0.3s;    transform: scale(0);}.flox-chat-title {    text-align: center;    vertical-align: middle;    bottom: 0;    position: relative;    font-size: 16px;    font-weight: 700;    color: #FFF;    opacity: 1;    font-family: 'Open Sans';    -webkit-transition: opacity 1s;    transition: opacity 1s linear}.cb-circle,.flox-toolTipBox {    text-align: center;    background-color: #FFF;    font-family: arial}#flox-chat-mob-ancr {    z-index: 100}@keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-moz-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@-webkit-keyframes csSlideDown {    0% {        opacity: .8    }    100% {        opacity: 0    }}@keyframes csCloseBtnSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-webkit-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@-moz-keyframes csSlideUp {    0% {        -webkit-transform: translateY(10px);        transform: translateY(10px);        opacity: 0    }    100% {        -webkit-transform: translateY(0);        transform: translateY(0);        opacity: 1    }}@media screen and (min-width:0) and (max-width:600px) {    #flox-chat-mob-ancr {        display: block;        z-index: 1000000;        opacity: 0    }    #flox-mobile-anchor {        width: auto;        height: 51px;        display: block    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}@media screen and (min-width:600px) and (max-width:1023px) {    #flox-chat-iframe-wrapper {        bottom: 400px    }    #flox-chat-close,    #flox-chat-img,    #flox-chat-mob-ancr {        bottom: 42px    }}#flox-chat-close.slideCloseButtonUp{    animation-name: csCloseBtnSlideUp;    -webkit-animation-name: csCloseBtnSlideUp;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    width: auto;    display: flex;    opacity: 1;}#flox-chat-close.cs-close-top{    height: 12px;    line-height: 12px;    padding: 7px;    border-radius: 25px;    webkit-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    -moz-box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);    box-shadow: -2px 2px 25px rgba(95, 95, 95, 0.64);}#flox-chat-img.slideright {    animation-name: csSlideUp;    -webkit-animation-name: csSlideUp;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    animation-duration: .5s;    -webkit-animation-duration: .5s;    width: auto;    opacity: 1;}#flox-chat-img.slideleft {    animation-name: csSlideDown;    -webkit-animation-name: csSlideDown;    animation-duration: .5s;    -webkit-animation-duration: .5s;    animation-timing-function: linear;    -webkit-animation-timing-function: linear;    padding: 0;    opacity: 0;    z-index: -1000}@keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@-webkit-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        -webkit-opacity: 0    }    50% {        -webkit-opacity: 0    }    100% {        right: 0;        position: absolute;        -webkit-opacity: 1    }}@-moz-keyframes rightFadeInOut {    0% {        position: absolute;        right: 100px;        opacity: 0    }    50% {        opacity: 0    }    100% {        right: 0;        position: absolute;        opacity: 1    }}@keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-moz-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        opacity: 1    }    10% {        opacity: 0    }    100% {        opacity: 0;        right: 100px    }}@-webkit-keyframes leftFadeInOut {    0% {        position: absolute;        right: 0;        -webkit-opacity: 1    }    10% {        -webkit-opacity: 0    }    100% {        -webkit-opacity: 0;        right: 100px    }}@-webkit-keyframes float {    0%,    100% {        box-shadow: 0 5px 15px 0 rgba(175, 175, 175, .6);        transform: translatey(0)    }    50% {        box-shadow: 0 15px 15px 0 rgba(175, 175, 175, .2);        transform: translatey(-3px)    }}#flox-text-item {    color: #FFF;    overflow: hidden;    font-size: 16px;    right: 0}#flox-text-items.slideright {    animation-name: rightFadeInOut;    animation-duration: .21s;    opacity: 1;    -webkit-opacity: 1}#flox-text-items.slideleft {    opacity: 0;    width: auto;    animation-name: leftFadeInOut;    -webkit-animation-name: leftFadeInOut;    animation-duration: .21s;    -webkit-animation-duration: .21s}#flox-chat-mob-ancr {    width: 160px;    display: none}#flox-chat-close.flox-hideHeader {    top: 0!important;    right: 0!important;    padding: 0!important;    width: auto}.flox-hideHeader img {    width: 18px;    height: 18px;    padding: 3px;    background-color: grey;    border-radius: 7px}.flox-circle_2:before,.flox-circle_3:before {    content: '';    background: #fff}.cb-circle {    width: 250px;    border: 5px solid #00bfb6;    padding: 80px 0;    margin: 30px auto;    border-radius: 50%;    font-size: 24px;    font-weight: 900;    position: relative;    color: #00bfb6}.flox-circle_2,.flox-circle_2:before {    position: absolute;    width: 25px;    padding: 20px}.flox-circle_2 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -15px;    bottom: 15px}.flox-circle_2:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-circle_3,.flox-circle_3:before {    position: absolute;    width: 5px;    padding: 10px 15px}.flox-circle_3 {    border: 5px solid #00bfb6;    border-radius: 50%;    right: -35px;    bottom: 13px}.flox-circle_3:before {    border-radius: 50%;    right: 0;    bottom: 0}.flox-toolTipBox {    z-index: 100;    cursor: pointer;    width: auto;    border: 1px solid #eaeaea;    padding: 10px 10px 10px 20px;    color: #797979;    position: fixed;    transform: translatey(0);    animation: float 3s ease-in-out infinite}.default_arrow:after,.default_arrow:before {    content: '';    width: 0;    height: 0;    position: absolute;    border-left: 7px solid transparent;    border-bottom: 10px solid transparent}.default_arrow:before {    border-right: 10px solid #949591;    border-top: 7px solid #949591;    right: 22px;    bottom: -18px}.default_arrow:after {    border-right: 10px solid #fff;    border-top: 7px solid #fff;    right: 24px;    bottom: -13px}.flox-toolTipHeaderWrapper {    display: inline-block;    margin-right: 20px;    text-align: left;    vertical-align: middle}#flox-toolTipImage {    background-color: #26acae;    vertical-align: middle;    margin-bottom: 0}.flox-toolTipBoxCaption {    font-size: 11px;    line-height: 15px}.flox-toolTipHeader {    font-size: 14px;    line-height: 18px;    font-weight: 600;    font-family: 'Open Sans'}</style><script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script><script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script><script>(function() {
-			// injected DOM script is not a content script anymore,
-			// it can modify objects and functions of the page
-			var _pushState = history.pushState;
-			history.pushState = function(state, title, url) {
-				_pushState.call(this, state, title, url);
-				window.dispatchEvent(
-					new CustomEvent('state-changed', { detail: url })
-				);
-			};
-			// repeat the above for replaceState too
-		})();</script></head>
+            // injected DOM script is not a content script anymore,
+            // it can modify objects and functions of the page
+            var _pushState = history.pushState;
+            history.pushState = function(state, title, url) {
+                _pushState.call(this, state, title, url);
+                window.dispatchEvent(
+                    new CustomEvent('state-changed', { detail: url })
+                );
+            };
+            // repeat the above for replaceState too
+        })();</script><script>(function() {
+            // injected DOM script is not a content script anymore,
+            // it can modify objects and functions of the page
+            var _pushState = history.pushState;
+            history.pushState = function(state, title, url) {
+                _pushState.call(this, state, title, url);
+                window.dispatchEvent(
+                    new CustomEvent('state-changed', { detail: url })
+                );
+            };
+            // repeat the above for replaceState too
+        })();</script><script>(function() {
+            // injected DOM script is not a content script anymore,
+            // it can modify objects and functions of the page
+            var _pushState = history.pushState;
+            history.pushState = function(state, title, url) {
+                _pushState.call(this, state, title, url);
+                window.dispatchEvent(
+                    new CustomEvent('state-changed', { detail: url })
+                );
+            };
+            // repeat the above for replaceState too
+        })();</script></head>
     <body class="">
 
         <header> 
@@ -519,7 +533,7 @@ function getServiceOptions(){
                              
                            </li>
                            <li><a href="https://mkp.gem.gov.in/browse_nodes/all_categories">Browse All Categories</a></li>
-						   <li><a href="https://mkp.gem.gov.in/search?q=">Browse All Products</a></li>
+                           <li><a href="https://mkp.gem.gov.in/search?q=">Browse All Products</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -540,7 +554,7 @@ function getServiceOptions(){
                                         <li>
                                             <a href="https://gem.gov.in/contactUs" title="" id="nov-color">Contact Us</a>
                                         </li>
-										<li>
+                                        <li>
                                             <a href="https://gem.gov.in/user_feedback" title="" id="nov-color">Rate a Seller</a>
                                         </li>
                                     </ul>
@@ -1067,7 +1081,7 @@ margin-bottom: 0px;
       <div class="col-md-2 col-xs-6 col-sm-6">
          <div class="list-inline secb gem-fot">
             <h6>Resources</h6>
-			<p>
+            <p>
                <a href="https://assets-bg.gem.gov.in/resources/pdf/GeM_handbook.pdf" title="Forms and Formats">GeM Handbook</a>
             </p>
             <p>
@@ -1142,19 +1156,19 @@ margin-bottom: 0px;
             </li>
             <li>
                <a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/Application_Security_Test_Report_GeM_21122018.pdf" title="STQC Certification for Quality Evaluation of GeM" target="_blank"><img src="./GeM _ Bid Lists_files/stqc-1-min.png" alt="STQC"></a>
-               <a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/stqc.pdf" title="STQC" target="_blank"><img src="./GeM _ Bid Lists_files/stqc-2-min.png" alt="Standardisation Testing and Quality Certification (STQC)"></a>	  
+               <a class="internalLink" href="https://assets-bg.gem.gov.in/resources/pdf/stqc.pdf" title="STQC" target="_blank"><img src="./GeM _ Bid Lists_files/stqc-2-min.png" alt="Standardisation Testing and Quality Certification (STQC)"></a>      
             </li>
          </ul>
        
       </div>
-	  <div class="clearfix"></div>
+      <div class="clearfix"></div>
    </div>
     <div class="footer-logo-bot sce">
    <div class="cont ">
    
       <div class="col-sm-2 vis col-xs-6 ">
        <p class="cpy ">© 2020 GeM All rights reserved </p>
-			
+            
         </div>
          <div class="col-sm-6 vis col-xs-6 vis text-center">
              <div class="stqc-gem">
@@ -1429,7 +1443,7 @@ margin-bottom: 0px;
             var res = str.replace("px", "");
             if (res > 10) {
                 $('body').css('font-size', parseInt(res - 1));
-				$('.fp').css("opacity", " unset");
+                $('.fp').css("opacity", " unset");
             } else {
                 $('.fm').css("opacity", " 0.3");
             }
@@ -1440,7 +1454,7 @@ margin-bottom: 0px;
             var res = str.replace("px", "");
             if (res < 25) {
                 $('body').css('font-size', parseInt(res) + 1);
-				$('.fm').css("opacity", " unset");
+                $('.fm').css("opacity", " unset");
             } else {
                 $('.fp').css("opacity", " 0.3");
             }
@@ -1680,7 +1694,7 @@ function redirect(val,event){
 }
     });
 }
-	$(window).scroll(function(){
+    $(window).scroll(function(){
   var sticky = $('.sticky'),
       scroll = $(window).scrollTop();
 
@@ -1692,7 +1706,7 @@ $('.menuac').click(function(){
    if($(this).hasClass('meact')){
       $('.menuac').removeClass('meact');
    }else{
-	   $('.menuac').removeClass('meact');
+       $('.menuac').removeClass('meact');
      $(this).addClass('meact');
    }
     
