@@ -48,3 +48,27 @@ Similarly, `--credentials` can be used to give a settings override file, `--apik
 
 you should use a dedicated database such as `mysql`, 
 
+### VIDEO CHAT
+
+Add in settings.json the below setting to change stun/turn servers.
+
+Example:
+"ep_webrtc" : {
+  "iceServers":[
+    {
+      "urls": [ "stun:216.246.6.224:3478", "stun:74.125.140.127:19302", "stun:[2a00:1450:400c:c08::7f]:19302" ]
+    }
+      ,
+    {
+      "urls": [ "turn:numb.viagenie.ca" ],
+      "credential": "muazkh",
+      "username": "webrtc@live.com"
+    },
+    {
+      "urls": ["turn:192.158.29.39:3478?transport=udp"],
+      "credential": "JZEOEt2V3Qb0y27GRntt2u2PAYA=",
+      "username": "28224511:1379330808"
+    }
+
+    ],
+}
