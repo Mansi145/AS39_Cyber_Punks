@@ -14,8 +14,10 @@ This repo includes the code for editor and video chat.
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
-git clone --branch master https://github.com/Mansi145/AS39_Cyber_Punks && cd node_editor/ && bin/run.sh
+git clone --branch master https://github.com/Mansi145/AS39_Cyber_Punks 
 Setup Mysql
+cd ssrc 
+npm install
 ```
 
 ### Manual install
