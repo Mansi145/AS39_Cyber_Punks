@@ -9,6 +9,11 @@ use Auth;
 use DataTables;
 use App\User;
 
+use OneSignal;
+
+// use Input;
+// use Input;
+
 class TncController extends Controller
 {
     public function create(Request $request)
@@ -48,7 +53,14 @@ class TncController extends Controller
 
     public function show($id)
     {
+
+        $tnc = Tnc::find($id);
+
         $access = Access::select('access')->where('user_id', Auth::id())->where('tnc_id', $id)->first()->access;
+        if (!isset($access) &&Auth::user()->is_admin == 1) {
+            $access = 1;
+        }
+
         $users = User::where('id', '<>', Auth::id());
         $user_ids = $users->pluck('id')->toArray();
 
@@ -56,11 +68,39 @@ class TncController extends Controller
         $user_ids_not_given_access = array_diff($user_ids, $user_ids_with_access);
         $users_not_given_access = User::where('id', '<>', Auth::id())->whereIn('id', $user_ids_not_given_access)->get();
         $users_with_access = $users->whereIn('id', $user_ids_with_access)->get();
-        $tnc = Tnc::find($id);
+
+        if ($request->get('freeze') != null) {
+            if ($request->get('freeze') == "1") {
+                $tnc->is_freeze = 1;
+                $action = "freeze";
+            } else if ($request->get('freeze') == "0") {
+                $tnc->is_freeze = 0;
+                $action = "unfreeze";
+            }
+            $tnc->save();
+
+            foreach ($users_with_access as $u) {
+                OneSignal::sendNotificationUsingTags(
+                    "Owner has ".$action." the document ".$tnc->title,
+                    array([
+                        "field" => "email",
+                        "relation" => "=",
+                        "value" => $u->email
+                    ])
+                );
+            }
+        }
+
+        $etherpad = new \EtherpadLite\Client(config('etherpad.api_key'), config('etherpad.url'));
+
         $padID = $tnc->pad_id;
-        if ($access == 2 || $access == 3 || Auth::user()->is_admin == 1) {
-            $etherpad = new \EtherpadLite\Client(config('etherpad.api_key'), config('etherpad.url'));
-            $authorID = $etherpad->createAuthorIfNotExistsFor(Auth::id(), Auth()->user()->name)->getData('authorID');
+        if ($access == 2 || $access == 3) {
+            if (Auth()->user()->is_admin == 1) {
+                $user_name = Auth()->user()->name;
+            } else {
+                $user_name = Auth()->user()->name.' ('.Auth()->user()->user_type.')';
+            }
+            $authorID = $etherpad->createAuthorIfNotExistsFor(Auth::id(), $user_name)->getData('authorID');
             $groupID = $etherpad->createGroupIfNotExistsFor($id)->getData('groupID');
             $sessionTime = time() + 24 * 60 * 60;
             $sessionID = $etherpad->createSession($groupID, $authorID, $sessionTime)->getData('sessionID');
@@ -69,13 +109,32 @@ class TncController extends Controller
         } else {
             $padID = $tnc->pad_read_id;
         }
+
+        if ($tnc->is_freeze == 1) {
+            $padID = $tnc->pad_read_id;
+        }
+        $owner_id = Access::where('tnc_id', $tnc->id)->where('access', 3)->first()->user_id;
+        // dd($owner_id);
+        $owner = User::where('id', $owner_id)->first();
+        // dd($owner);
+
+        $ts = $etherpad->getLastEdited($tnc->pad_id)->getData('lastEdited');
+        $utc = date("Y-m-d H:i", $ts/1000);
+        $last_edit = date("d-m-Y H:i", strtotime($utc.' + 330 minute'));
+
+        $version = $etherpad->getRevisionsCount($tnc->pad_id)->getData('revisions');
+
         return view('tnc_show', [
-            'access' => $access,
             'padID' => $padID,
             'title' => $tnc->title,
             'users_not_given_access' => $users_not_given_access,
             'users_with_access' => $users_with_access,
             'tnc_id'   => $id,
+            'is_freeze' => $tnc->is_freeze,
+            'owner' => $owner->name,
+            'owner_id' => $owner_id,
+            'last_edit' => $last_edit,
+            'version' => $version
         ]);
     }
 
@@ -84,7 +143,7 @@ class TncController extends Controller
         if (Auth::user()->is_admin != 1) {
             $tnc = Tnc::whereIn('id', Access::select('tnc_id')->where('user_id', Auth::id())->get()->toArray())->get();
         } else {
-            $tnc = Tnc::get();
+            $tnc = Tnc::where('archive', 0)->get();
         }
         return Datatables::of($tnc)
             ->editColumn('title', function (Tnc $t) {
@@ -101,7 +160,8 @@ class TncController extends Controller
                         '.csrf_field().'
                         <input type="hidden" name="_method" value="DELETE">
                         <button class="btn btn-danger"><i class="fas fa-trash-alt mr-1"></i> Delete</button>
-                    </form>';
+                    </form> &nbsp <a href="'.route('tncs.archive', $t->id).'" class="d-inline btn btn-warning">
+                    <i class="fas fa-pencil-alt mr-1"></i> Move to Archive</a>';
                 }
             })
             ->addColumn('owner', function (Tnc $t) {
@@ -126,6 +186,14 @@ class TncController extends Controller
         if (isset($tnc)) {
             return view('tnc_edit', compact('tnc'));
         }
+    }
+
+    public function archiveTnc($id)
+    {
+        $tnc = Tnc::find($id);
+        $tnc->archive = 1;
+        $tnc->save();
+        return back();
     }
 
     public function updateTnc(Request $request, $id)
@@ -160,6 +228,22 @@ class TncController extends Controller
                 $access->user_id = $user_id;
                 $access->access = $request->access;
                 $access->save();
+
+                $title = Tnc::find($id)->title;
+                $email = User::find($user_id)->email;
+                if ($request->access == 1) {
+                    $access = "read";
+                } else {
+                    $access = "write";
+                }
+                OneSignal::sendNotificationUsingTags(
+                    "You have given ".$access." access to document ".$title,
+                    array([
+                        "field" => "email",
+                        "relation" => "=",
+                        "value" => $email
+                    ])
+                );
             }
         }
         return back()->with(['msg' =>'Tnc access rights has been updated successfully', 'class' => 'alert-success']);
@@ -174,6 +258,22 @@ class TncController extends Controller
             } else {
                 $access->update(['access' => $access_id]);
             }
+            
+            $title = Tnc::find($id)->title;
+            $email = User::find($user_id)->email;
+            if ($access_id == 1) {
+                $access = "read";
+            } else {
+                $access = "write";
+            }
+            OneSignal::sendNotificationUsingTags(
+                "You have given ".$access." access to document ".$title,
+                array([
+                    "field" => "email",
+                    "relation" => "=",
+                    "value" => $email
+                ])
+            );
         }
         return back()->with(['msg' =>'Tnc access rights has been updated successfully', 'class' => 'alert-success']);
     }

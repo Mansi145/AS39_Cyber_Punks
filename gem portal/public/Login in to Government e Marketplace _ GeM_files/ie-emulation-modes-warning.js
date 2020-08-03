@@ -1,0 +1,3 @@
+(function(){function e(){var h=/MSIE ([0-9.]+)/.exec(window.navigator.userAgent);if(h===null){return null;}var g=parseInt(h[1],10);var f=Math.floor(g);return f;}function c(){var f=new Function("/*@cc_on return @_jscript_version; @*/")();if(f===undefined){return 11;}if(f<9){return 8;}return f;}var a=window.navigator.userAgent;
+if(a.indexOf("Opera")>-1||a.indexOf("Presto")>-1){return;}var b=e();if(b===null){return;}var d=c();if(b!==d){window.alert("WARNING: You appear to be using IE"+d+" in IE"+b+" emulation mode.\nIE emulation modes can behave significantly differently from ACTUAL older versions of IE.\nPLEASE DON'T FILE BOOTSTRAP BUGS based on testing in IE emulation modes!");
+}})();

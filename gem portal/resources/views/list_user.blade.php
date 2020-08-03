@@ -12,6 +12,7 @@
                  <th>Id</th>
                  <th>Name</th>
                  <th>Email</th>
+                 <th>User Type</th>
                  <th>Created</th>
                  <th>Action</th>
              </tr>
@@ -32,6 +33,7 @@
        { data: 'id', name: 'id' },
        { data: 'name', name: 'name' },
        { data: 'email', name: 'email' },
+       { data: 'user_type', name: 'user_type'},
        { data: 'created_at', name: 'created_at' },
        { data: 'action', name: 'action' }
        ]

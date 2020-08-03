@@ -1,4 +1,11 @@
 @extends('layouts.dashboard')
+@section('script')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+    });
+</script>
+@endsection
 @section('content')
 <div class="card">
     <div class="card-body">
@@ -48,6 +55,13 @@
                 @enderror
                 <label for="orangeForm-pass-confirm">Confirm Password</label>
             </div>
+
+            <select class="mdb-select colorful-select dropdown-dark" name="user_type">
+                <option value="" {{ $user->user_type == null ? ' selected' : ''}}>Select User Type</option>
+                <option value="buyer" {{ $user->user_type == "buyer" ? ' selected' : ''}}>Buyer</option>
+                <option value="seller" {{ $user->user_type == "seller" ? ' selected' : ''}}>Seller</option>
+            </select>
+            <label class="mdb-main-label">User Type</label>
 
             <div class="md-form">
                 <input type="checkbox" class="form-check-input" id="materialUnchecked" name="super_admin">

@@ -29,6 +29,7 @@ class AdminController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'user_type' => $data['user_type'],
             'is_admin' => isset($data['super_admin']) ? 1 : 0,
         ]);
         return back()->with(['msg' =>'User created successfully', 'class' => 'alert-success']);
@@ -39,6 +40,9 @@ class AdminController extends Controller
         return Datatables::of(User::query())
             ->editColumn('name', function (User $u) {
                 return $u->name;
+            })
+            ->addColumn('user_type', function (User $u) {
+                return $u->user_type;
             })
             ->editColumn('created_at', function (User $u) {
                 return $u->created_at->diffForHumans();
@@ -81,6 +85,7 @@ class AdminController extends Controller
             $user->name = $data['name'];
             $user->password = Hash::make($data['password']);
             $user->is_admin = isset($data['super_admin']) ? 1 : 0;
+            $user->user_type = $data['user_type'];
             $user->save();
         }
         return back()->with(['msg' =>'User details has been updated successfully', 'class' => 'alert-success']);
