@@ -1,6 +1,6 @@
-# PHP SERVER
+# GEM SERVICES
 
-This is the MCQ Module create by NCS for conducting various quiz type events that are held in the college.
+This is the main interaction portal of GEM Services
 
 # Getting Started
 
@@ -34,7 +34,7 @@ Generate the Application key
 php artisan key:generate
 ```
 
-Set DB credentials, InfoConnect API URL and App Name in `.env`
+Set DB credentials
 
 Migrate the database.
 
