@@ -37,14 +37,16 @@ Note: Either use cloud pricing or existent local server pricing
 | 1 | Cloud | M4.large/C4.xlarge| Rs. 1000/2000 | Yes | No | 1 | 
 | 2 | Cloud | Backup Server | Rs. 200 | Yes | No | 1 |   
 | 3 | Cloud | Data Tranfser | Rs. 1400 | Yes | No | 1 |
-| 4 | Cloud | T3.micro | Rs. 200 | Yes | No | 3 |
-| 5 | Cloud | Elastic Load Balancer | Rs. 1000 | Yes | No | 1 |
-| 6 | Cloud | Twilio TURN SERVER | Rs. 6000 | Yes | No | 1 |
-| 7 | Cloud | STUN | FREE | Yes | No | 1 |
+| 4 | Cloud | Twilio TURN SERVER | Rs. 6000 | Yes | No | 1 |
+| 5 | Cloud | STUN | FREE | Yes | No | 1 |
+| 6 | Cloud | T3.micro | Rs. 200 | Yes | No | 3 |
+| 7 | Cloud | Elastic Load Balancer | Rs. 1000 | Yes | No | 1 |
+
+6 & 7 will be used if the server cant handle the traffic
 
 - Active Users: 100000 Maximum
 - Pods: 7-8
-- Total: Rs. 10200 Per Month
+- Total: Rs. 8600 Min. - 10200 (6&7) Per Month 
  
 
 ### Already Existent Servers
